@@ -1,0 +1,19 @@
+1)Create Flutter App
+2)Create Firebase Project
+3)Create Authentication under the Build
+4)Create a firestore database
+5)Modify the rules
+6)Add Project Select Android get package name by pressging the ctrl+p and search for the AndroidManifest.xml
+7) Genrate SHA1 key
+     - Requriements (javainstall)
+     Command to create SHa key
+     keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -storepass android -keypass android -keyalg RSA -keysize 2048 -validity 10000
+
+     note it will create a debug.keystore file in a current directory and copy theis file and patse into a android 
+     folder
+
+     to view the SHA key
+     >keytool -list -v -keystore "C:\Users\Kunal\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+8) Add files to the project level and app level gridle
+9) change minSdkVersion to 21 and add multiDexEnabled true in app\src\build.gradle
+10) Add SHA56 also
